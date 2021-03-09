@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body background="{% static 'img/bg.png' %}">
+    <header>
+        <ul class="main-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/generative">Generate Music</a></li>
+            <li class="active"><a href="/about">About</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1 class="about-heading">Here is what Mu-Gen does for you!</h1>
+        <div class="about-article-container">
+            <div class="about-container">
+                <article class="about-article">
+                    <h2 class="about-article-heading"><a href="" class="about-article-link">Mu-Gen uses LSTM Architecture</a></h2>
+                    <p class="about-article-para">
+                        Mu-Gen uses modernistic AI algorithm 'LSTM' to generate melodies inspired from different regional folk songs from all over the world. LSTM is a special kind of Recurrent Neural network. <br>
+                        RNN is a type of Neural Network (NN) where the output from previous step are fed as input to the current step. In other words, RNN is a generalization of feed-forward neural network that has an internal memory. RNNs are designed to recognize a data’s sequential characteristics and use patterns to predict the next likely scenario.
+                    </p>
+                </article>
+            </div>
+            <div class="about-container">
+                <article class="about-article">
+                    <h2 class="about-article-heading"><a href="http://kern.humdrum.org/" class="about-article-link">About ESAC Dataset</a></h2>
+                    <p class="about-article-para">
+                        <ol type="a">
+                            <li>Over 20k songs from all over the world. The project started in 1994</li>
+                            <li>ESAC stands for “Essen Associative Code and Folk song database”</li>
+                            <li>Region wise folk songs are available from across many continents (mostly european). </li>
+                        </ol>
+                    </p>
+                    <p>
+                        Data files downloaded in kern format (.KRN). <br>
+                        Folk songs from the region of Austria, China, Czech Republic, Germany, Hungary, Lorraine region of France, Netherlands, Poland, Switzerland, Yugoslavia taken. <br>
+                    </p>
+                </article>
+            </div>
+            <div class="about-container">
+                <article class="about-article">
+                    <h2 class="about-article-heading"><a href="http://kern.humdrum.org/" class="about-article-link">About Kern</a></h2>
+                    <p class="about-article-para">
+                        Kern- encoding for symbolic representation. Kern was developed in the 80s, in the context of a software (library) Humdrum. Humdrum is a library where you can analyse symbolic music. Kern is the encoding (music representation) used by the Humdrum software package. <br>
+                        The kern representation is used to represent basic or core information for music. The kern scheme can be used to encode pitch and duration, plus other common score-related information. <br>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
